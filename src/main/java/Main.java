@@ -17,6 +17,9 @@ public class Main extends Application {
             AnchorPane mainLayout = loader.load();
             Scene scene = new Scene(mainLayout);
             stage.setScene(scene);
+            stage.setTitle("Duke");
+            stage.setMinHeight(220.0);
+            stage.setMinWidth(417.0);
             loader.<MainWindow>getController().setDuke(duke);
             stage.show();
         } catch (IOException exception) {
